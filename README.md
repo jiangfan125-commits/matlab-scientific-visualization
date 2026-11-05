@@ -2,9 +2,9 @@
 
 **English** · [简体中文](README.zh-CN.md)
 
-A Claude Code skill for **publication-quality MATLAB figures** — palettes that survive
-greyscale, styles that keep multi-panel figures identical, exports whose width and DPI are
-measured instead of assumed.
+A Claude Code skill for **publication-quality MATLAB figures**: palettes that survive
+greyscale, styles that keep multi-panel figures identical, and exports whose width and DPI are
+measured rather than assumed.
 
 ![Same data, two ways](docs/before-after.png)
 
@@ -83,7 +83,7 @@ figureExport(f, 'outputs/fig1', 'Formats', {'pdf','png'}, 'WidthMM', 89, 'DPI', 
 | `figureColormap(name, n)` | `viridis`, `cividis`, `plasma`, `magma` as anchor-interpolated maps |
 
 Plus five reference documents, including eleven runnable MATLAB patterns
-(`references/matlab_examples.md`) and a table of MATLAB-specific traps — `axis equal` inside a
+(`references/matlab_examples.md`) and a table of MATLAB-specific traps: `axis equal` inside a
 small panel, `ColorOrder` not affecting existing lines, CJK font substitution during PDF export.
 
 ## What it deliberately does not do
@@ -98,7 +98,7 @@ small panel, `ColorOrder` not affecting existing lines, CJK font substitution du
 
 ## Attribution
 
-Derived from **Scientific Agent Skills** — `scientific-visualization` v1.4, by **K-Dense Inc.**,
+Derived from **Scientific Agent Skills**, `scientific-visualization` v1.4, by **K-Dense Inc.**,
 released under the MIT License.
 
 > Kassis, T., Agarwal, V., He, Y., Patel, D., & Brueckner, A. M. (2026). *Scientific Agent
@@ -112,4 +112,4 @@ See [NOTICE.md](NOTICE.md) for the full breakdown of what came from where.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).

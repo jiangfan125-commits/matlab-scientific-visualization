@@ -3,7 +3,7 @@
 [English](README.md) · **简体中文**
 
 一个给 **MATLAB 出论文级矢量图** 用的 Claude Code 技能：配色在灰度打印下仍然分得开，
-多子图的版式保持一致，导出的宽度和 DPI 是量出来的而不是猜的。
+多子图的版式保持一致，导出的宽度和 DPI 都实测过。
 
 ![同样的数据，两种画法](docs/before-after.png)
 
@@ -68,7 +68,7 @@ figureExport(f, 'outputs/fig1', 'Formats', {'pdf','png'}, 'WidthMM', 89, 'DPI', 
   effective   : 300 dpi over 89.0 mm
 ```
 
-宽度是量出来的：89 mm 报成 88.90 mm，300 DPI 下 89 mm 对应 1051 px —— 数字对得上。
+宽度是量出来的：89 mm 报成 88.90 mm，300 DPI 下 89 mm 对应 1051 px。
 
 ## 工具箱里有什么
 
@@ -82,7 +82,7 @@ figureExport(f, 'outputs/fig1', 'Formats', {'pdf','png'}, 'WidthMM', 89, 'DPI', 
 | `figureColormap(name, n)` | `viridis`、`cividis`、`plasma`、`magma`，按锚点插值生成色图 |
 
 另附五篇参考文档，其中包括十一个可直接运行的 MATLAB 范例
-（`references/matlab_examples.md`），以及一张 MATLAB 专属陷阱表 —— 小面板里的
+（`references/matlab_examples.md`），以及一张 MATLAB 专属陷阱表：小面板里的
 `axis equal`、`ColorOrder` 修改不影响已画的线、PDF 导出时中文字体被替换。
 
 ## 它刻意不做的事
@@ -97,7 +97,7 @@ figureExport(f, 'outputs/fig1', 'Formats', {'pdf','png'}, 'WidthMM', 89, 'DPI', 
 
 ## 出处与致谢
 
-源自 **Scientific Agent Skills** —— `scientific-visualization` v1.4，作者 **K-Dense Inc.**，
+源自 **Scientific Agent Skills**，`scientific-visualization` v1.4，作者 **K-Dense Inc.**，
 以 MIT 许可证发布。
 
 > Kassis, T., Agarwal, V., He, Y., Patel, D., & Brueckner, A. M. (2026). *Scientific Agent
@@ -107,8 +107,8 @@ figureExport(f, 'outputs/fig1', 'Formats', {'pdf','png'}, 'WidthMM', 89, 'DPI', 
 配色数值依据 Bang Wong, *Nature Methods* 8, 441 (2011) 与 Paul Tol,
 SRON/EPS/TN/09-002 issue 3.2 (2021)。完整来源列表见 `references/sources.md`。
 
-逐项说明"哪些来自上游、哪些是新写的"，见 [NOTICE.md](NOTICE.md)。
+逐项说明“哪些来自上游、哪些是新写的”，见 [NOTICE.md](NOTICE.md)。
 
 ## 许可证
 
-MIT —— 见 [LICENSE](LICENSE)。
+MIT。见 [LICENSE](LICENSE)。
