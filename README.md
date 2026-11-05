@@ -1,5 +1,7 @@
 # matlab-scientific-visualization
 
+**English** · [简体中文](README.zh-CN.md)
+
 A Claude Code skill for **publication-quality MATLAB figures** — palettes that survive
 greyscale, styles that keep multi-panel figures identical, exports whose width and DPI are
 measured instead of assumed.
@@ -111,18 +113,3 @@ See [NOTICE.md](NOTICE.md) for the full breakdown of what came from where.
 ## License
 
 MIT — see [LICENSE](LICENSE).
-
----
-
-## 中文速览
-
-把 MATLAB 出图从"能看懂"推到"能直接进论文"：色彩盲友好的配色、多子图统一的版式、
-导出后实测宽度与 DPI。六个函数，零工具箱依赖。
-
-```matlab
-figureStyle('publication', gca, 'WidthMM', 89, 'HeightMM', 60)
-figureExport(gcf, 'out/fig1', 'Formats', {'pdf','png'}, 'WidthMM', 89, 'DPI', 300)
-```
-
-触发场景：MATLAB 画图、出图、配图、美化、论文插图、实验报告图，或者你只是想问
-"这张图为什么看着别扭"。
